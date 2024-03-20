@@ -1,7 +1,7 @@
 import { Button, Card, CardActions, CardContent, FormControl, FormControlLabel, IconButton, Radio, RadioGroup, TextField, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import NavBar from './NavBar'
+import NavBar from './NavBar';
 import SearchIcon from '@mui/icons-material/Search';
 import './style.css';
 import AdminHospitalService from '../Admin-service/AdminHospitalService';
@@ -40,6 +40,7 @@ const ViewHospital = () => {
                 console.log(error);
             })
         }
+
         else if (selection == 'Name') {
             AdminHospitalService.searchHospitalByName(text).then((response) => {
                 setHospitals(response.data)
@@ -87,7 +88,7 @@ const ViewHospital = () => {
             </div>
             <div className='row' style={{ backgroundColor: 'azure' }}>
                 {hospitals.map(hospital =>
-                    <Card sx={{ minWidth: 275 }} className='col-4 m-5 jcard' sx={{ backgroundColor: 'azure' }}>
+                    <Card sx={{ minWidth: 275 ,  backgroundColor: 'azure' }} className='col-4 m-5 jcard'>
                         <CardContent>
                             <Typography variant="h5" component="div">
                                 {hospital.hname}
@@ -122,5 +123,4 @@ const ViewHospital = () => {
         </div>
     )
 }
-
 export default ViewHospital

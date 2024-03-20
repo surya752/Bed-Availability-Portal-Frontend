@@ -89,7 +89,7 @@ const UserViewHospital = () => {
             </div>
             <div className='row' style={{ backgroundColor: 'azure' }}>
                 {hospitals.map(hospital =>
-                    <Card sx={{ minWidth: 275 }} className='col-4 m-5 jcard' sx={{ backgroundColor: 'azure' }}>
+                    <Card sx={{ minWidth: 275 ,backgroundColor: 'azure' }} className='col-4 m-5 jcard'>
                         <CardContent>
                             <Typography variant="h5" component="div">
                                 {hospital.hname}

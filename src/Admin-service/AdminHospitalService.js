@@ -1,6 +1,6 @@
 import axios from "axios"
-const ADMINHOSPITAL_URL = "http://localhost:8081/hospitals/"
-const ADMINADDBED_URL = "http://localhost:8084/AddBed/"
+const ADMINHOSPITAL_URL = "http://localhost:1111/hospitals/"
+const ADMINADDBED_URL = "http://localhost:1333/AddBed/"
 class AdminHospitalService
 {
     getAllHospitals() {
