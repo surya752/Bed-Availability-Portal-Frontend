@@ -103,6 +103,7 @@ export default class Adminlogin extends Component {
 
                   <div className="container-image">
                     <img src={profile} alt="profile" className="profile" />
+<<<<<<< HEAD
 
                   </div>
 
@@ -141,6 +142,44 @@ export default class Adminlogin extends Component {
                       />
                     </div><br />
 
+=======
+                  </div>
+                </div>
+
+                <div className="col-md-12">
+                  <Form
+                    onSubmit={this.handleLogin}
+                    ref={c => {
+                      this.form = c;
+                    }}
+                  >
+                    <div className="form-group">
+                      <label className="labelname">Admin Name</label>
+                      <Input
+                        type="text"
+                        className="form-control"
+                        name="username"
+                        placeholder="Username"
+                        value={this.state.username}
+                        onChange={this.onChangeUsername}
+                        validations={[vusername]}
+                      />
+                    </div>
+
+                    <div className="form-group">
+                      <label className="labelname">Password</label>
+                      <Input
+                        type="password"
+                        className="form-control"
+                        name="password"
+                        placeholder="Password"
+                        value={this.state.password}
+                        onChange={this.onChangePassword}
+                        validations={[vpassword]}
+                      />
+                    </div><br />
+
+>>>>>>> 551b8ac0aa26f1dd3f6b25374da7fe0bbad4aba8
                     <div className="form-group">
                       <button
 

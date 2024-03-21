@@ -1,7 +1,7 @@
 import { Button, Card, CardActions, CardContent, FormControl, FormControlLabel, IconButton, Radio, RadioGroup, TextField, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import NavBar from './NavBar'
+import NavBar from './NavBar';
 import SearchIcon from '@mui/icons-material/Search';
 import './style.css';
 import AdminHospitalService from '../Admin-service/AdminHospitalService';
