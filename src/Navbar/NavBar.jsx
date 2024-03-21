@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
-import {  MdLogin, MdLogout, MdPostAdd } from "react-icons/md";
-import { ImProfile } from "react-icons/im";
+import { MdLogin} from "react-icons/md";
+//import { MdLogin, MdLogout, MdPostAdd } from "react-icons/md";
+//import { ImProfile } from "react-icons/im";
 import { FaHospital } from "react-icons/fa";
 import '../Navbar/navbar.css'
 import image from '../Images/BedPortal1.png'
@@ -11,7 +12,7 @@ const MainNavBar = () => {
     return (
         <nav className="navigation">
             <a href="/" className="brand-name">
-            <img src={image} ></img>
+                <img src={image} ></img>
             </a>
             <button
                 className="hamburger"
@@ -28,18 +29,18 @@ const MainNavBar = () => {
             >
                 <ul>
                     <li>
-                        <a href="/"><FaHospital/>Home</a>
+                        <a href="/"><FaHospital />Home</a>
                     </li>
                     <li>
-                        <a href="/adminlogin"><MdLogin/> Admin</a>
+                        <a href="/adminlogin"><MdLogin /> Admin</a>
                     </li>
                     <li >
-                        <a href="/userlogin" ><MdLogin/>User</a>
+                        <a href="/userlogin" ><MdLogin />User</a>
                     </li>
                 </ul>
             </div>
         </nav>
-  );
+    );
 }
 
 export default MainNavBar;

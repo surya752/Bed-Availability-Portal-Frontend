@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import {  MdLogout, MdPostAdd } from "react-icons/md";
-import { ImProfile } from "react-icons/im";
+//import { ImProfile } from "react-icons/im";
 import { FaHospital } from "react-icons/fa";
 import './navbar.css'
 import image from '../Images/BedPortal1.png'

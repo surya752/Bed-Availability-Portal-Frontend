@@ -40,7 +40,7 @@ const ViewBeds = () => {
         {beds.map(bed => {
           if (bed.hname == hname) {
             return (
-              <Card sx={{ minWidth: 275 }} className='col-3 m-5 jcard' sx={{backgroundColor:'azure'}}>
+              <Card sx={{ minWidth: 275,backgroundColor:'azure' }} className='col-3 m-5 jcard' >
               <CardContent>
               <Typography variant="h5" component="div">
                 ID :{bed.bedId}

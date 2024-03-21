@@ -59,14 +59,14 @@
 }
 
 .navigation-menu li a:hover {
-   color:  #BF2051;
+    color: #BF2051;
     font-size: x-large;
 }
 
 
 
 .hamburger:hover {
-    background-color:  #BF2051;
+    background-color: #BF2051;
 }
 
 @media screen and (max-width: 768px) {

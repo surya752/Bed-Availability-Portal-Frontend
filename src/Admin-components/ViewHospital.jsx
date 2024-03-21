@@ -40,6 +40,7 @@ const ViewHospital = () => {
                 console.log(error);
             })
         }
+
         else if (selection == 'Name') {
             AdminHospitalService.searchHospitalByName(text).then((response) => {
                 setHospitals(response.data)
@@ -87,7 +88,7 @@ const ViewHospital = () => {
             </div>
             <div className='row' style={{ backgroundColor: 'azure' }}>
                 {hospitals.map(hospital =>
-                    <Card sx={{ minWidth: 275 }} className='col-4 m-5 jcard' sx={{ backgroundColor: 'azure' }}>
+                    <Card sx={{ minWidth: 275 ,  backgroundColor: 'azure' }} className='col-4 m-5 jcard'>
                         <CardContent>
                             <Typography variant="h5" component="div">
                                 {hospital.hname}
@@ -122,5 +123,4 @@ const ViewHospital = () => {
         </div>
     )
 }
-
 export default ViewHospital
