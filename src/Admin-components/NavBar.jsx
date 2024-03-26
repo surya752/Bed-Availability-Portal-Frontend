@@ -2,8 +2,12 @@ import React from 'react'
 import { useState } from 'react';
 import {  MdLogout, MdPostAdd } from "react-icons/md";
 //import { ImProfile } from "react-icons/im";
+<<<<<<< HEAD
 import { FcMultipleDevices } from "react-icons/fc";
 import { FcNews } from "react-icons/fc";
+=======
+import { FaHospital } from "react-icons/fa";
+>>>>>>> 551b8ac0aa26f1dd3f6b25374da7fe0bbad4aba8
 import './navbar.css'
 const NavBar = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false)

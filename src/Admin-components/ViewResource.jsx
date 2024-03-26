@@ -1,8 +1,12 @@
 import { Button, Card, CardActions, CardContent, FormControl, FormControlLabel, IconButton, Radio, RadioGroup, TextField, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD:src/Admin-components/ViewResource.jsx
 import NavBar from './NavBar'
 import { FcExternal } from "react-icons/fc";
+=======
+import NavBar from './NavBar';
+>>>>>>> 551b8ac0aa26f1dd3f6b25374da7fe0bbad4aba8:src/Admin-components/ViewHospital.jsx
 import SearchIcon from '@mui/icons-material/Search';
 import './style.css';
 import { FaEye } from "react-icons/fa";
@@ -41,6 +45,7 @@ const ViewResource = () => {
                 console.log(error);
             })
         }
+
         else if (selection == 'Name') {
             AdminResourceService.searchResourceByName(text).then((response) => {
                 setResources(response.data)
@@ -87,8 +92,13 @@ const ViewResource = () => {
                 </center>
             </div>
             <div className='row' style={{ backgroundColor: 'azure' }}>
+<<<<<<< HEAD:src/Admin-components/ViewResource.jsx
                 {resources.map(resource =>
                     <Card sx={{ minWidth: 275, backgroundColor: 'azure' }} className='col-4 m-5 jcard'>
+=======
+                {hospitals.map(hospital =>
+                    <Card sx={{ minWidth: 275 ,  backgroundColor: 'azure' }} className='col-4 m-5 jcard'>
+>>>>>>> 551b8ac0aa26f1dd3f6b25374da7fe0bbad4aba8:src/Admin-components/ViewHospital.jsx
                         <CardContent>
                             <Typography variant="h5" component="div">
                                 {resource.resourceName}
@@ -122,4 +132,8 @@ const ViewResource = () => {
         </div>
     )
 }
+<<<<<<< HEAD:src/Admin-components/ViewResource.jsx
 export default ViewResource
+=======
+export default ViewHospital
+>>>>>>> 551b8ac0aa26f1dd3f6b25374da7fe0bbad4aba8:src/Admin-components/ViewHospital.jsx

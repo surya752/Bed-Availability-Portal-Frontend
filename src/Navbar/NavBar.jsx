@@ -12,8 +12,12 @@ const MainNavBar = () => {
     return (
         <nav className="navigation">
             <a href="/" className="brand-name">
+<<<<<<< HEAD
                 {/* <img src={image} ></img> */}
                 <span class="cursive-font">Resource_Manager</span>
+=======
+                <img src={image} ></img>
+>>>>>>> 551b8ac0aa26f1dd3f6b25374da7fe0bbad4aba8
             </a>
             <button
                 className="hamburger"

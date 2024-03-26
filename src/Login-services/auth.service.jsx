@@ -1,6 +1,10 @@
 import axios from "axios";
 
+<<<<<<< HEAD
 const API_URL = "http://localhost:9091/Admin/auth/";
+=======
+const API_URL = "http://localhost:1111/Admin/auth/";
+>>>>>>> 551b8ac0aa26f1dd3f6b25374da7fe0bbad4aba8
 
 class AuthService {
   async login(username, password) {
