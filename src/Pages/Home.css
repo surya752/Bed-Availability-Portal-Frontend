@@ -60,10 +60,12 @@ img {
 
 .room-text {
     padding: 5px 20px;
+   
 }
 
 .room-text h3 {
     font-size: 24px;
+    color: whitesmoke;
 }
 
 .room-text ul {

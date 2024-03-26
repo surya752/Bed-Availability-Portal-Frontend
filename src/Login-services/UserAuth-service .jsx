@@ -1,21 +1,29 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8082/User/auth/";
+const API_URL = "http://localhost:9092/User/auth/";
 
 class UserAuthService {
-  login(username, password) {
-    return axios
-      .post(API_URL + "signin", {
+  async login(username, password) {
+    try {
+      const response = await axios.post(API_URL + "signin", {
         username,
         password
-      })
-      .then(response => {
-        if (response.data.accessToken) {
-          localStorage.setItem("User", JSON.stringify(response.data));
-        }
-
-        return response.data;
       });
+      
+      if (response.data.accessToken) {
+        localStorage.setItem("admin", JSON.stringify(response.data));
+        return response.data;
+      } else {
+        throw new Error("Credentials are incorrect.");
+      }
+    } catch (error) {
+      // Handle specific error cases or return a generic message
+      if (error.response && error.response.status === 401) {
+        throw new Error("Invalid username or password.");
+      } else {
+        throw new Error("Login failed. Please try again later.");
+      }
+    }
   }
 
   logout() {
@@ -31,7 +39,7 @@ class UserAuthService {
   }
 
   getCurrentUser() {
-    return JSON.parse(localStorage.getItem('User'));;
+    return JSON.parse(localStorage.getItem("User"));
   }
 }
 

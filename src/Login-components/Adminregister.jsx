@@ -7,6 +7,7 @@ import "../Login-components/loginbackground.css";
 import AuthService from "../Login-services/auth.service";
 import profile from "../Images/admin.jpg";
 import MainNavBar from "../Navbar/NavBar";
+import { Link } from "react-router-dom";
 
 const email = value => {
   if (!isEmail(value)) {
@@ -208,9 +209,6 @@ export default class AdminRegister extends  React.Component {
                 <div className="form-group">
                   <button > <span className="login-button">SignUp</span></button>
                 </div>
-                <div className="link">
-             <div>You Have Already Account ? <a href="/adminlogin"> SignIn</a></div><br/>
-            </div>
               </div>
             )}
 
@@ -234,6 +232,9 @@ export default class AdminRegister extends  React.Component {
                 this.checkBtn = c;
               }}
             />
+            <span>
+             You Have Already Account ? <Link to= "/adminlogin"> SignIn</Link><br/>
+            </span>
           </Form>
         </div>
       </div>

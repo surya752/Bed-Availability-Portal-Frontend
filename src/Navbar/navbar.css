@@ -9,7 +9,12 @@
     color: #1B4571;
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }
-
+.cursive-font {
+    font-family: "Montserrat", sans-serif; /* Use the same font name as in the link tag */
+    font-size: 1.2em; /* Adjust the font size as needed */
+    font-weight: 700;
+    color: #BF2051;
+  }
 .brand-name {
     width: 190px;
     text-decoration: none;
@@ -59,14 +64,14 @@
 }
 
 .navigation-menu li a:hover {
-   color:  #BF2051;
+    color: #BF2051;
     font-size: x-large;
 }
 
 
 
 .hamburger:hover {
-    background-color:  #BF2051;
+    background-color: #BF2051;
 }
 
 @media screen and (max-width: 768px) {
